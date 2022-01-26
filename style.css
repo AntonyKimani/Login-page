@@ -1,0 +1,89 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap');
+
+*{
+    padding:0;
+    margin:0;
+}
+:root{
+    --background-color:#EEF4D4;
+    --background-color-2:#DBBDC4;
+    --background-color-3:#967D73;
+    --button-color:#292929;
+    --font-style:'Poppins', sans-serif;
+    --heading-font:36px;
+    --normal-font:20px;
+}
+body{
+    background:var(--background-color);
+}
+.container{
+    padding:2em;
+    background-color:white;
+    width:70%;
+    position:relative;
+    top:10em;
+    left:15em;
+}
+.container h1{
+    display:flex;
+    justify-content:center;
+    font-family:var(--font-style);
+    font-size:var(--heading-font);
+}
+.container h2{
+    display:flex;
+    justify-content:center;
+    font-family:'Poppins'
+}
+.login{
+    display:flex;
+    justify-content:space-evenly;
+}
+.login-img{
+
+}
+.login-text {
+    display:grid;
+    row-gap:.5em;
+}
+.email{
+    color:var(--button-color);
+    background:transparent;
+    border:none;
+    border-bottom:1px var(--button-color) solid;
+    height:4em;
+    outline:none;
+}
+.email::placeholder{
+    font-size:var(--normal-font);
+    
+}
+.password{
+    color:var(--button-color);
+    background:transparent;
+    border:none;
+    border-bottom:1px var(--button-color) solid;
+    height:4em;
+    outline:none;
+}
+.password::placeholder{
+    font-size:var(--normal-font);
+}
+.btn{
+    color:white;
+    background:var(--button-color);
+    height:3em;
+    position:relative;
+    left:3em;
+    border:none;
+    width:150px;
+    border-radius:28px;
+    font-size:var(--normal-font);
+    transition:.5s ease-in-out;
+}
+.btn:hover{
+    background:transparent;
+    border:1px var(--button-color) solid;
+    color:var(--button-color);
+    cursor:pointer;
+}
