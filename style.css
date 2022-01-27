@@ -12,6 +12,7 @@
     --font-style:'Poppins', sans-serif;
     --heading-font:36px;
     --normal-font:20px;
+    --medium-size-font:15px;
 }
 body{
     background:var(--background-color);
@@ -86,4 +87,113 @@ body{
     border:1px var(--button-color) solid;
     color:var(--button-color);
     cursor:pointer;
+}
+@media(max-width:1440px){
+    body{
+        max-width:100%
+    }
+}
+@media(max-width:1024px){
+    body{
+        max-width:100%;
+        height:auto;
+    }
+    .container{
+        max-width:80%;
+        position:relative;
+        left:2em;
+    }
+    .login-img img{
+        width:90%;
+        height:auto;
+    }
+    .login-text{
+        row-gap:2em;
+    }
+    .btn{
+        left:1em;
+    }
+}
+@media(max-width:425px){
+    body{
+        width:425px;
+        overflow-x:hidden;
+    }
+    .container{
+        width:400px;
+        top:3em;
+        left:.5em;
+        overflow:hidden;
+    }
+    .login{
+        display:grid;
+    }
+    .login-img{
+
+    }
+    .login-img img{
+        width:auto;
+        height:40vh;
+        position:relative;
+        left:0em;
+    }
+    .login-text{
+        width:fit-content;
+        position:relative;
+        left:7em;
+    }
+    .btn{
+        left:3em;
+    }
+}
+@media(max-width:375px){
+    body{
+        width:375px;
+
+    }
+    .container{
+        width:70%;
+        top:3em;
+        left:1.5em; 
+    }
+    .container h2{
+        font-size:var(--medium-size-font);
+    }
+    .login{
+        display:grid;
+    }
+    .login-img{
+
+    }
+    .login-img img{
+        width:auto;
+        height:30vh;
+        position:relative;
+        left:0em;
+    }
+    .login-text{
+        width:200px;
+        left:4em;
+    }
+    .btn{
+        left:1em;
+    }
+}
+@media(max-width:320px){
+    .container{
+        width:60%;
+        left:2em;
+    }
+    .login-text{
+        left:2em;
+    }
+    .btn{
+        width:40%;
+        height:auto;
+        font-size:var(--medium-size-font);
+        left:4em;
+    }
+    .login-text a{
+        font-size:var(--medium-size-font);
+    }
 }
