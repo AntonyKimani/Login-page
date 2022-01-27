@@ -28,7 +28,7 @@ body{
     padding:2em;
     background-color:white;
     width:70%;
-    height:50vh;
+    height:70vh;
 }
 .container h1{
     display:flex;
@@ -129,9 +129,7 @@ body{
     }
     .container{
         width:400px;
-        height:80vh;
-
-        overflow:hidden;
+        height:auto;
     }
     .login{
         display:grid;
@@ -163,6 +161,7 @@ body{
     }
     .container{
         width:70%;
+        height:auto;
     }
     .container h2{
         font-size:var(--medium-size-font);
@@ -189,10 +188,15 @@ body{
 @media(max-width:320px){
     .container{
         width:60%;
-        left:2em;
+        position:relative;
+        top:4em;
+        height:auto;
     }
     .login-text{
         left:2em;
+    }
+    .email{
+        width:200px
     }
     .btn{
         width:60%;
